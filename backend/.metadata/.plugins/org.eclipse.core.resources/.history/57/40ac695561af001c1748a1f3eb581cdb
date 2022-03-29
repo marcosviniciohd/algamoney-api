@@ -1,0 +1,3 @@
+CREATE TABLE categoria (
+	
+) ENGINE=InnoDB DEFAULT CHARSET=utf-8
