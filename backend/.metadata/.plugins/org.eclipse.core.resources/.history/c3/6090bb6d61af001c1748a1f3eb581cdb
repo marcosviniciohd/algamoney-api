@@ -1,3 +1,0 @@
-CREATE TABLE categoria (
-	codigo BIGINT
-) ENGINE=InnoDB DEFAULT CHARSET=utf-8;

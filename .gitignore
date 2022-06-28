@@ -9,6 +9,7 @@ target/
 .settings
 .springBeans
 .sts4-cache/
+/backend/.metadata
 
 ### IntelliJ IDEA ###
 .idea
@@ -58,6 +59,7 @@ chrome-profiler-events*.json
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+backend/.metadata
 
 # misc
 /.angular/cache
