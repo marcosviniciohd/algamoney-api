@@ -17,13 +17,13 @@
     class="btn btn-primary"
     (click)="adicionar()" [disabled]=" nome.length == 0"
   >Adicionar</button>
-
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+  <!-- Explorando a diretiva *ngFor -->
+  <div class="row" style="margin-top: 20px;">
+    <div class="col-2" *ngFor="let funcionario of funcionarios">
+      <div class="card">
+        <img class="card-img-top" src="https://randomuser.me/api/portraits/men/{{funcionario.id}}.jpg">
+        <div class="card-block">{{ funcionario.nome }}</div>
+      </div>
     </div>
   </div>
 </div>
