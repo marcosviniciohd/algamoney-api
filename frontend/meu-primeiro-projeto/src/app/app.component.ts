@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nome = 'Marcos';
+  nome = '';
   /* sobreNome: string = ''; */
 
   adicionar(){
@@ -27,8 +27,8 @@ export class AppComponent {
     this.nome = 'João ' + numero;
   } */
 
-  alterarNome(event: any): void {
+  /* alterarNome(event: any): void {
     //console.log(event);
     this.nome = event.target.value;
-  }
+  } */
 }
