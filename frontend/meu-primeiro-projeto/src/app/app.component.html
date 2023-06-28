@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="alert alert-success" role="alert">
+  <div class="alert alert-success" role="alert" *ngIf="adicionado">
    <h5>Funcionário adicionado: {{ nome }}</h5>
   </div>
   <div class="form-group">
@@ -7,6 +7,7 @@
       <input type="text"
       class="form-control"
       [(ngModel)]="nome"
+      (focus)="adicionado = false"
     >
   </div>
   <button type="button"
