@@ -1,23 +1,17 @@
 <div class="container">
   <div class="alert alert-success" role="alert">
-   <h5>Funcionário adicionado: {{ nome + " " + sobreNome }}</h5>
+   <h5>Funcionário adicionado: {{ nome }}</h5>
   </div>
   <div class="form-group">
     <label for="formGroupExampleInput">Nome:</label>
       <input type="text"
       class="form-control"
-      #nomeInput
-    >
-  </div>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Sobrenome:</label>
-      <input type="text"
-      class="form-control"
-      #sobreNomeInput
+      (input)="alterarNome($event)"
+      [value]="nome"
     >
   </div>
   <button type="button"
     class="btn btn-primary"
-    (click)="adicionar(nomeInput.value, sobreNomeInput.value)"
+    (click)="adicionar()" [disabled]=" nome.length == 0"
   >Adicionar</button>
 </div>
