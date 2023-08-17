@@ -6,17 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  funcionarios: any = [];
-
-  aoAdicionar(){
-    
-  }
-
-  nome: string = 'João';
-  
-  adicionar() {
-    console.log(`Adicionando ${this.nome}`);
-  }
-
+  title = 'app';
 }

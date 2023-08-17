@@ -1,26 +1,21 @@
-<div class="container">
-  <!-- <div class="alert alert-success" role="alert" *ngIf="adicionado">
-   <h5>Funcionário adicionado: {{ nome }}</h5>
-  </div> -->
-  <div class="alert alert-success" role="alert" [hidden]="!adicionado">
-    <h5>Funcionário adicionado: {{ nome }}</h5>
-   </div>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Nome:</label>
-      <input type="text"
-      class="form-control"
-      [(ngModel)]="nome"
-      (focus)="adicionado = false"
-    >
-  </div>
-  <button type="button"
-    class="btn btn-primary"
-    (click)="adicionar()" [disabled]=" nome.length == 0"
-  >Adicionar</button>
+<!--<div class="container">
+  <app-funcionario-form (funcionarioAdicionado="aoAdicionar()")></app-funcionario-form>
   <!-- Explorando a diretiva *ngFor -->
-  <div class="row" style="margin-top: 20px;">
+  <!--<div class="row" style="margin-top: 20px;">
     <div class="col-2" *ngFor="let f of funcionarios">
       <app-funcionario-card [funcionario]="f"></app-funcionario-card>
     </div>
   </div>
+</div>-->
+<div class="container">
+    <div class="alert alert-sucess" role="alert">
+      Funcionario adicionado com sucesso! <strong>{{nome}}</strong>
+    </div>
+
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" id="nome">
+    </div>
+
+    <button type="button" class="btn btn-primary" (click)="adicionar()">Adicionar</button>
 </div>
